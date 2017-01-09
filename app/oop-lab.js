@@ -2,9 +2,9 @@ function Fruits(type, name = "fruit") {
   this.type= type;
   this.name = name;
   this.isEdible = type === "Culinary" ? true : false;
-  if (this.isEdible === true && name === "lime") {  // assigns edibility based on type
+  if (this.isEdible === true && name === "Lime") {  // assigns edibility based on type
     this.taste = "sour";
-  } else if (this.isEdible === true && name === "cocoa") {
+  } else if (this.isEdible === true && name === "Cocoa") {
     this.taste = "bitter";
   } else {
     this.taste = "sweet";
