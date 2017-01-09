@@ -12,7 +12,7 @@ function Fruits(type, name = "fruit") {
   this.noOfFruits = "Please plant the fruit."
   // produces more fruits based on number of seeds
   this.pollinate = function(seed = 0) {
-    this.noOfFruits = seed >= 5 ? "You have " + seed * 25 + " fruits." : "You have " + seed * 100 + " Fruits."
+    this.noOfFruits = seed <= 5 ? "You have " + seed * 25 + " fruits." : "You have " + seed * 100 + " fruits."
     var newFruits = Object.assign(new Fruits(), this);
     return newFruits;
   }
