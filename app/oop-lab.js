@@ -9,13 +9,19 @@ function Fruits(type, name = "fruit") {
   } else {
     this.taste = "sweet";
   }
-  this.noOfFruits = "Please plant the fruit."
   // produces more fruits based on number of seeds
   this.pollinate = function(seed = 0) {
-    this.noOfFruits = seed <= 5 ? "You have " + seed * 25 + " fruits." : "You have " + seed * 100 + " fruits."
+    this.noOfFruits = seed > 1 ? `You have ${seed * 25} fruits.` : "You have no seeds to pollinate."
     var newFruits = Object.assign(new Fruits(), this);
     return newFruits;
   }
 
 }
-module.exports = Fruits
+Mango.prototype = new Fruits();
+Mango.prototype.constructor = Mango;
+function Mango(type, name = "fruit") {
+  this.type = type;
+  this.name = name;
+}
+
+module.exports = Fruits, Mango;

@@ -2,6 +2,7 @@
   'use strict';
 
   var Fruits = require('../app/oop-lab.js');
+  var Mango = require('../app/oop-lab.js');
 
   describe("Create a Fruits class that can pollinate and produce more fruits", function() {
 
@@ -45,11 +46,11 @@
     });
 
     it("The fruit planted should be an instance of the Fruits class.", function() {
-      var apple  = new Fruits('Culinary', 'Apple');
-      var babyApple = apple.pollinate(7);
-      expect(babyApple instanceof Fruits).toBeTruthy();
-      expect(typeof babyApple.pollinate).toBe(typeof (function (){}));
-      expect(apple.noOfFruits).toBe(babyApple.noOfFruits);
+      var mango  = new Mango('Culinary', 'Apple');
+      var babyMango = mango.pollinate(7);
+      expect(babyMango instanceof Fruits).toBeTruthy();
+      expect(typeof babyMango.pollinate).toBe(typeof (function (){}));
+      expect(mango.noOfFruits).toBe(babyMango.noOfFruits);
     });
 
   });

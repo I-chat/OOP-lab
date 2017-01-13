@@ -1,0 +1,25 @@
+{
+  "name": "object-oriented-programming",
+  "version": "1.0.0",
+  "description": "A javascript object oriented programming sample",
+  "main": "app/oo-lab.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "jasmine": "^2.5.2"
+  },
+  "scripts": {
+    "test": "jasmine tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-chat/OOP-lab.git"
+  },
+  "author": "Ikikin Ichiato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I-chat/OOP-lab/issues"
+  },
+  "homepage": "https://github.com/I-chat/OOP-lab#readme"
+}
